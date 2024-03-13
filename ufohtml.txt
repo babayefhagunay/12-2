@@ -78,7 +78,7 @@
         </section>
     </div>
     <section>
-        <div>
+        <div class="btn">
             <button><a href="">Explore</a></button>
         </div>
     </section>

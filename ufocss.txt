@@ -7,12 +7,17 @@
     text-decoration: none;
     list-style: none;
 }
+.container{
+    width: 100%;
+    max-width: 95%;
+    margin: 0 auto;
+}
 body{
     background: linear-gradient(61deg, rgba(28, 28, 29, 0.368) 0%, rgba(1, 1, 1, 0.264) 100%), url("https://images.unsplash.com/photo-1656608138197-2aea23cc3564?q=80&w=1977&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
-    height: 90vh;
+    height: 100vh;
 }
 .nav_logo img{
     width: 50px;
@@ -33,7 +38,6 @@ img:hover{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* width: 80%; */
 }
 .nav_list{
     display: flex;
@@ -43,8 +47,9 @@ img:hover{
 .nav_list ul {
     display: flex;
     gap: 50px;
-    justify-content: center; /* Öğeleri yatayda merkeze hizala */
-    align-items: center; /* Öğeleri dikeyde merkeze hizala */
+    justify-content: center; 
+    align-items: center; 
+    margin-left: 500px;
 }
 a{
     color: inherit;
@@ -78,18 +83,16 @@ a{
     }
 }
 .i{
-    margin-top: 10px;
-    margin-right: 40px;
-    cursor: pointer;
-    width: 30px;
-    height: 30px;
-    color: blue;
-    border-radius: 25px;
-    background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    margin-top: 10px;
+    margin-right: 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    color: blue;
+    background-color: white;
 }
 .sec1{
     width: 50%;
@@ -176,6 +179,7 @@ a{
 }
 .card_text{
     color: white;
+    margin-top: 145px;
 }
 button{
     width: 150px;
