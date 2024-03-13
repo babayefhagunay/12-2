@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Manrope:wght@200..800&family=Marhey:wght@300..700&family=Oleo+Script:wght@400;700&family=Oswald:wght@200..700&family=Overpass:ital,wght@0,100..900;1,100..900&family=Slackside+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Manrope:wght@200..800&family=Marhey:wght@300..700&family=Oleo+Script:wght@400;700&family=Oswald:wght@200..700&family=Overpass:ital,wght@0,100..900;1,100..900&family=Slackside+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background: linear-gradient(61deg, rgba(28, 28, 29, 0.368) 0%, rgba(1, 1, 1, 0.264) 100%), url("https://images.unsplash.com/photo-1656608138197-2aea23cc3564?q=80&w=1977&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    height: 90vh;
+}
+.nav_logo img{
+    width: 50px;
+    height: 60px;
+    margin-left: 100px;
+}
+.all{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+img:hover{
+    transform: rotateY(360deg);
+    transition-duration: 3s;
+    filter: drop-shadow(10px 36px 10px blue);
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* width: 80%; */
+}
+.nav_list{
+    display: flex;
+    margin-right: 200px;
+   
+}
+.nav_list ul {
+    display: flex;
+    gap: 50px;
+    justify-content: center; /* Öğeleri yatayda merkeze hizala */
+    align-items: center; /* Öğeleri dikeyde merkeze hizala */
+}
+a{
+    color: inherit;
+}
+.nav_list ul li a {
+    color: white;
+    font-family: 'Slackside One', sans-serif;
+    font-size: 30px;
+    transition: text-shadow 0.3s ease; 
+    position: relative; /* Add position:relative for positioning the :before pseudo-element */
+}
+.nav_list ul li a:hover {
+    text-shadow: 2px 2px 5px rgba(0, 0, 255, 0.7);
+}
+.nav_list ul li a:hover:before {
+    content: "";
+    position: absolute;
+    bottom: -5px; 
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: rgb(34, 6, 136);
+    animation: lineAppear 0.3s ease; 
+}
+@keyframes lineAppear {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+.i{
+    margin-top: 10px;
+    margin-right: 40px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    color: blue;
+    border-radius: 25px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.sec1{
+    width: 50%;
+    margin-left: 50px;
+    font-size: 30px;
+    color: white;
+    font-family: 'Slackside One', sans-serif;
+}
+.sec1 h1 {
+    margin: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 255, 0.7); 
+    transition: text-shadow 0.3s ease; 
+}
+.sec1 h1:hover {
+    filter: drop-shadow(10px 10px 10px blue);}
+
+.sect1 h1:hover{
+    text-shadow: blue;
+}
+.sec2{
+    display: flex;
+    justify-content: end;
+}
+.cards{
+    margin-top: 100px;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px 10px;
+    gap: 30px;
+}
+.card:hover{
+    bottom: 10px;
+    transition-duration: 3s;
+    transition-delay: 3s;
+}
+.card:first-of-type{
+    background-image: url(uzay1.avif);
+    position: absolute;
+    width: 180px;
+    height: 250px;
+    justify-content: end;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    box-shadow: 0px 5px 7px white;
+}
+.card:nth-of-type(2){
+    background-image: url(uzay2.avif);
+    position: absolute;
+    width: 180px;
+    height: 250px;
+    justify-content: end;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    box-shadow: 0px 5px 7px white;
+}
+.card:nth-of-type(3){
+    background-image: url(uzay3.avif);
+    position: absolute;
+    width: 180px;
+    height: 250px;
+    justify-content: end;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    box-shadow: 0px 5px 7px white;
+}
+.card:nth-of-type(4){
+    background-image: url(uzay4.avif);
+    position: absolute;
+    width: 180px;
+    height: 250px;
+    justify-content: end;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    box-shadow: 0px 5px 7px white;
+}
+.card_text{
+    color: white;
+}
+button{
+    width: 150px;
+    height: 50px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+    background-color: blue;
+    border-radius: 10px;
+}
+.button:hover{
+    background-color: linear-gradient( rgba(44, 44, 212, 0.368));
+}
